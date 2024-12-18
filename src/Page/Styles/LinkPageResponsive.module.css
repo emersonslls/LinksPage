@@ -1,0 +1,159 @@
+/* <---- CSS RESPONSIVO ----> */
+
+/* CSS MOBILE */
+@media only screen and (width >=320px) and (width <=480px) {
+    /* ---- Home ---- */
+
+    .Home {
+        height: 1220px;
+    }
+
+    .Background {
+        width: 1540.77px;
+        height: 1127.88px;
+        left: calc(50% - 1540.77px/2 + 299.68px);
+        top: calc(50% - 1127.88px/2 - 25.95px);
+    }
+
+    /* ---- Container Principal ---- */
+
+    .Container {
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    /* ---- Header ---- */
+
+    header {
+        width: 372px;
+        height: 238px;
+        left: calc(50% - 372px/2);
+        top: 80px;
+
+        & .NameAndInfo {
+            width: 372px;
+        }
+
+        & .NameAndInfo h1 {
+            width: 360px;
+            height: 54px;
+
+            font-size: 44px;
+            line-height: 54px;
+
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .NameAndInfo h2 {
+            width: 189px;
+            height: 18px;
+
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .Detail {
+        top: 325px;
+    }
+
+    /* ---- Container dos links ---- */
+
+    .ContainerLinks {
+        gap: 1.5rem;
+
+        width: 382px;
+        height: 592px;
+        left: calc(50% - 382px/2);
+        top: 185px;
+    }
+
+    .MeuPortfolio,
+    .LinkedIn,
+    .Github,
+    .Email {
+        width: 382px;
+        height: 130px;
+
+        & img {
+            width: 600.75px;
+            height: 396.29px;
+
+            left: -10px;
+        }
+    }
+
+    .ContainerTexts {
+        width: 232px;
+        height: 59px;
+        left: 30px;
+        top: calc(50% - 59px/2);
+
+        & h1 {
+            width: 232px;
+            height: 27px;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        & h2 {
+            width: 232px;
+            height: 36px;
+
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    /* ---- Container dos links sociais ---- */
+
+    .LinkSociais {
+        top: 1060px;
+        gap: 20px;
+    }
+
+    /* ---- Footer ---- */
+
+    footer {
+        bottom: 30px;
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Background {
+        width: 1892.1px;
+        height: 1385.06px;
+        left: calc(50% - 1892.1px/2 + 303.36px);
+        top: calc(50% - 1385.06px/2 - 113.47px);
+    }
+
+    /* ---- Container Principal ---- */
+
+    .Container {
+        width: 581px;
+        left: calc(50% - 581px/2);
+    }
+}
+
+/* CSS NOTEBOOK */
+@media only screen and (width >=1024px) and (width <=1440px) {
+    .Background {
+        width: 1892.1px;
+        height: 1385.06px;
+        left: calc(50% - 1892.1px/2 + 303.36px);
+        top: calc(50% - 1385.06px/2 - 113.47px);
+    }
+
+    /* ---- Container Principal ---- */
+
+    .Container {
+        position: absolute;
+        width: 980px;
+        left: calc(50% - 980px/2);
+    }
+}
