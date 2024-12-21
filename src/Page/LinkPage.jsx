@@ -10,41 +10,37 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Não se esqueça de importar o CSS
 
 /* <---- ASSETS ----> */
-import Foto from '../Assets/Foto.png';
-import ScrollDetail from '../Assets/ScrollDetail.svg'; /* Detaisl */
+import Foto from '../Assets/Foto.png'; /* Minha foto */
+import ScrollDetail from '../Assets/ScrollDetail.svg'; /* Detail */
 /* <---- FUNDOS DOS CARDS DOS LINKS ----> */
-import Fundo1 from '../Assets/FUNDOS/image 15.png';
-import Fundo2 from '../Assets/FUNDOS/image 17.png';
-import Fundo3 from '../Assets/FUNDOS/image 3.png';
-import Fundo4 from '../Assets/FUNDOS/image 18.png';
+import Fundo1 from '../Assets/FUNDOS/image 15.png'; /* Fundo Section Portfolio*/
+import Fundo2 from '../Assets/FUNDOS/image 17.png'; /* Fundo Section LinkedIn */
+import Fundo3 from '../Assets/FUNDOS/image 3.png'; /* Fundo Section GitHub */
+import Fundo4 from '../Assets/FUNDOS/image 18.png'; /* Fundo Section E-mail */
 /* <---- ICONS REDES ----> */
-import IconLinkedin from '../Assets/Icons/IconLink.png';
-import IconInsta from '../Assets/Icons/IconInst.png';
-import IconGitHub from '../Assets/Icons/IconGit.png';
+import IconLinkedin from '../Assets/Icons/IconLink.png'; /* Icon LinkedIn*/
+import IconInsta from '../Assets/Icons/IconInst.png'; /* Icon Instagram */
+import IconGitHub from '../Assets/Icons/IconGit.png'; /* Icon GitHub */
 /* <---- BACKGROUND ----> */
-import Background from '../Assets/BackgroundVector.png';
+import Background from '../Assets/BackgroundVector.png'; /* Background Letra S */
 
 function LinkPage() {
 
     useEffect(() => {
-        // Inicializa o AOS
+        /* Inica o AOS */
         AOS.init({
-            duration: 2000, // Duração das animações
+            duration: 2000, /* Tempo de duração da animação */
         });
     }, []);
 
-    const meuEmail = 'emersonsantossales245@gmail.com';
+    const meuEmail = 'emersonsantossales245@gmail.com'; /* Declara a função e chama o meu e-mail */
 
     return (
-        <div className={`${styles.Home} ${responsivoStyles.Home}`}>
-
+        <div className={`${styles.Home} ${responsivoStyles.Home}`} /* <--- Home ----> */>
             <img src={Background} className={styles.Background} />
             { /* <---- Container principal ----> */}
-
             <section className={`${styles.Container} ${responsivoStyles.Container}`}>
-
                 { /* <---- Header ----> */}
-
                 <header data-aos="fade-down-left">
                     <img src={Foto} />
                     <div className={`${styles.NameAndInfo} ${responsivoStyles.NameAndInfo}`}>
@@ -56,15 +52,10 @@ function LinkPage() {
                         </h2>
                     </div>
                 </header>
-
-                <img src={ScrollDetail} className={`${styles.Detail} ${responsivoStyles.Detail}`}/>
-
+                <img src={ScrollDetail} className={`${styles.Detail} ${responsivoStyles.Detail}`} />
                 { /* <---- Container dos links ----> */}
-
                 <section className={`${styles.ContainerLinks} ${responsivoStyles.ContainerLinks}`} data-aos="fade-up">
-
                     { /* <---- Section do meu portfólio ----> */}
-
                     <a href="#" target="_blank">
                         <section className={`${styles.MeuPortfolio} ${responsivoStyles.MeuPortfolio}`} data-aos="fade-up-right">
                             <img src={Fundo1} />
@@ -92,9 +83,7 @@ function LinkPage() {
                             </svg>
                         </section>
                     </a>
-
                     { /* <---- Section do meu linkedin ---->  */}
-
                     <a href="https://www.linkedin.com/in/emerson-sales-9a5a49277/" target="_blank">
                         <section className={`${styles.LinkedIn} ${responsivoStyles.LinkedIn}`} data-aos="fade-up-left">
                             <img src={Fundo2} />
@@ -122,9 +111,7 @@ function LinkPage() {
                             </svg>
                         </section>
                     </a>
-
                     { /* <---- Section do meu github ---->  */}
-
                     <a href="https://github.com/emersonslls?tab=repositories" target="_blank">
                         <section className={`${styles.Github} ${responsivoStyles.Github}`} data-aos="fade-up-right">
                             <img src={Fundo3} />
@@ -152,13 +139,8 @@ function LinkPage() {
                             </svg>
                         </section>
                     </a>
-
                     { /* <---- Section do meu email ---->  */}
-
-                    <a
-                        href={`mailto:${meuEmail}`}
-                        target="_blank"
-                    >
+                    <a href={`mailto:${meuEmail}`} target="_blank">
                         <section className={`${styles.Email} ${responsivoStyles.Email}`} data-aos="fade-up-left">
                             <img src={Fundo4} />
                             <div className={`${styles.ContainerTexts} ${responsivoStyles.ContainerTexts}`}>
@@ -186,9 +168,7 @@ function LinkPage() {
                         </section>
                     </a>
                 </section>
-
                 { /* <---- Links sociais ----> */}
-
                 <div className={`${styles.LinkSociais} ${responsivoStyles.LinkSociais}`} data-aos="fade-up">
                     <h1>
                         Link Sociais
@@ -205,15 +185,12 @@ function LinkPage() {
                         </a>
                     </div>
                 </div>
-
                 { /* <---- Footer ----> */}
-
                 <footer>
                     <h1>
                         Feito por <span>&nbsp;@_sxlles</span>
                     </h1>
                 </footer>
-
             </section>
         </div>
     );

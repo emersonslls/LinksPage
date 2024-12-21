@@ -13,6 +13,7 @@
     text-decoration: none;
 }
 
+/* <---- COLORS E FONTE ----> */
 :root {
     --font-principal: 'Poppins', sans-serif;
     --font-secundaria: "ClashDisplay", sans-serif;
@@ -22,7 +23,7 @@
     --azul: #066FD5;
 }
 
-/* ---- ScrollBar ---- */
+/* <---- ScrollBar ----> */
 
 /* Largura */
 ::-webkit-scrollbar {
@@ -40,8 +41,7 @@
     border-radius: 10px;
 }
 
-/* ---- Home ---- */
-
+/* <---- Home ----> */
 .Home {
     width: 100%;
     height: 1250px;
@@ -55,13 +55,13 @@
     position: absolute;
     width: 1892.1px;
     height: 1385.06px;
-    left: calc(50% - 1892.1px/2 + 303.36px);
+    left: calc(50% - 1892.1px/2 + 123.88px);
     top: calc(50% - 1385.06px/2 - 113.47px);
 
     opacity: 0.02;
 }
 
-/* ---- Container Principal ---- */
+/* <---- Container Principal ----> */
 
 .Container {
     position: relative;
@@ -75,7 +75,7 @@
     z-index: 9;
 }
 
-/* ---- Header ---- */
+/* <---- HEADER ----> */
 
 header {
     display: flex;
@@ -96,11 +96,8 @@ header {
         height: 149px;
 
         border-radius: 14px;
-        /* Define os cantos arredondados */
         background: linear-gradient(to right, #066FD5 0%, #3772FF 100%);
-        /* Degradê */
         padding: 3px;
-        /* Define a largura da "borda" */
     }
 
     & .NameAndInfo {
@@ -127,7 +124,6 @@ header {
         font-weight: 600;
         font-size: 48px;
         line-height: 59px;
-        /* identical to box height */
         display: flex;
         align-items: center;
         text-align: center;
@@ -148,7 +144,6 @@ header {
         font-weight: 600;
         font-size: 12px;
         line-height: 18px;
-        /* identical to box height */
         display: flex;
         align-items: center;
         text-align: center;
@@ -181,17 +176,14 @@ header {
     0%,
     100% {
         transform: translateY(0);
-        /* Posição inicial e final */
     }
 
     50% {
         transform: translateY(10px);
-        /* Move 5px para baixo */
     }
 }
 
-/* ---- Container dos links ---- */
-
+/* <---- Container dos links ----> */
 .ContainerLinks {
     display: flex;
     flex-direction: column;
@@ -214,17 +206,11 @@ header {
     width: 550px;
     height: 108px;
     position: relative;
+    overflow: hidden;
 
     background: linear-gradient(92.67deg, #121315 0%, #000000 100%);
     border-radius: 10px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
     cursor: pointer;
-
-    overflow: hidden;
 
     & img {
         position: absolute;
@@ -244,13 +230,12 @@ header {
     }
 }
 
-
 .MeuPortfolio:hover,
 .LinkedIn:hover,
 .Github:hover,
 .Email:hover {
     transform: translateY(-1px);
-    box-shadow: 6px 6px 8px rgba(56, 53, 50, 0.1);
+    box-shadow: 0px 8px 20px rgba(56, 53, 50, 0.1);
 }
 
 .ContainerTexts {
@@ -274,7 +259,6 @@ header {
         font-weight: 600;
         font-size: 24px;
         line-height: 30px;
-        /* identical to box height */
 
         color: var(--branco);
 
@@ -304,8 +288,7 @@ header {
     }
 }
 
-/* ---- Container dos links sociais ---- */
-
+/* <---- Container dos links sociais ----> */
 .LinkSociais {
     display: flex;
     flex-direction: column;
@@ -315,12 +298,12 @@ header {
 
     position: absolute;
     width: 127.29px;
-    height: 51px;
+    height: 58px;
     left: calc(50% - 127.29px/2);
     top: 1055px;
 
     & h1 {
-        width: autox;
+        width: auto;
         height: 18px;
 
         font-family: var(--font-principal);
@@ -328,7 +311,6 @@ header {
         font-weight: 600;
         font-size: 12px;
         line-height: 18px;
-        /* identical to box height */
         display: flex;
         align-items: center;
         text-align: center;
@@ -362,8 +344,6 @@ header {
     align-self: stretch;
     flex-grow: 0;
 
-
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     & img {
@@ -379,11 +359,10 @@ header {
 
 .RedesIcons img:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(6, 109, 213, 0.315);
+    filter: drop-shadow(0 10px 20px #066dd5e9);
 }
 
-/* ---- Footer ---- */
-
+/* <---- FOOTER ----> */
 footer {
     display: flex;
     flex-direction: column;
@@ -406,7 +385,6 @@ footer {
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
-        /* identical to box height */
         display: flex;
         align-items: center;
         text-align: center;
