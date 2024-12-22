@@ -56,7 +56,7 @@ function LinkPage() {
                 { /* <---- Container dos links ----> */}
                 <section className={`${styles.ContainerLinks} ${responsivoStyles.ContainerLinks}`} data-aos="fade-up">
                     { /* <---- Section do meu portfólio ----> */}
-                    <a href="#" target="_blank">
+                    <a href="https://emersonsalesdev.vercel.app" target="_blank">
                         <section className={`${styles.MeuPortfolio} ${responsivoStyles.MeuPortfolio}`} data-aos="fade-up-right">
                             <img src={Fundo1} />
                             <div className={`${styles.ContainerTexts} ${responsivoStyles.ContainerTexts}`}>
