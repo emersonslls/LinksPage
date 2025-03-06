@@ -177,7 +177,7 @@ function LinkPage() {
                         <a href="https://www.linkedin.com/in/emerson-sales-9a5a49277/" target="_blank">
                             <img src={IconLinkedin} />
                         </a>
-                        <a href="https://www.instagram.com/_sxlles/" target="_blank">
+                        <a href="https://www.instagram.com/sxlesz_/" target="_blank">
                             <img src={IconInsta} />
                         </a>
                         <a href="https://github.com/emersonslls?tab=repositories" target="_blank">
@@ -188,7 +188,7 @@ function LinkPage() {
                 { /* <---- Footer ----> */}
                 <footer>
                     <h1>
-                        Feito por <span>&nbsp;@_sxlles</span>
+                        Feito por <span>&nbsp;@sxlesz_</span>
                     </h1>
                 </footer>
             </section>

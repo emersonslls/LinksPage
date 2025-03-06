@@ -371,13 +371,13 @@ footer {
     gap: 5px;
 
     position: absolute;
-    width: 145px;
+    width: 155px;
     height: 21px;
-    left: calc(50% - 145px/2);
+    left: calc(50% - 155px/2);
     bottom: 45px;
 
     & h1 {
-        width: 145px;
+        width: 155px;
         height: 21px;
 
         font-family: var(--font-principal);
